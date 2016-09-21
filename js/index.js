@@ -29,27 +29,28 @@ var scrollPic = function () {
     var index = 1;
     var timer = null;
     var $ul=$('#slider').find('ul');
-    $ul.css("transform","translateX(" + index * width * (-1) + "px)");
-    //imgBox.style.transform = "translateX(" + index * width * (-1) + "px)";
+    //$ul.css("transform","translateX(" + index * width * (-1) + "px)");
+    imgBox.style.transform = "translateX(" + index * width * (-1) + "px)";
+    imgBox.style.webkitTransform = "translateX(" + index * width * (-1) + "px)";
 //    加过渡
     function addTransition() {
-       // imgBox.style.transition = "all .3s ease 0s";
-       // imgBox.style.webkitTransition = "all .3s ease 0s";
-        $ul.css('transition',"all .3s ease 0s");
+        imgBox.style.transition = "all .3s ease 0s";
+        imgBox.style.webkitTransition = "all .3s ease 0s";
+        //$ul.css('transition',"all .3s ease 0s");
     }
 
 //    除去过渡
     function removeTransition() {
-        //imgBox.style.transition = "none";
-        //imgBox.style.webkitTransition = "none";
-        $ul.css('transition',"none");
+        imgBox.style.transition = "none";
+        imgBox.style.webkitTransition = "none";
+        //$ul.css('transition',"none");
     }
 
     //图片移动
     function setTransform(t) {
-        //imgBox.style.transform = "translateX(" + t + "px)";
-        //imgBox.style.webkitTransform = "translateX(" + t + "px)";
-        $ul.css('transform',"translateX(" + t + "px)");
+        imgBox.style.transform = "translateX(" + t + "px)";
+        imgBox.style.webkitTransform = "translateX(" + t + "px)";
+        //$ul.css('transform',"translateX(" + t + "px)");
     }
 
     function yuanPlay(index) {
