@@ -36,21 +36,34 @@ var scrollPic = function () {
     function addTransition() {
         imgBox.style.transition = "all .3s ease 0s";
         imgBox.style.webkitTransition = "all .3s ease 0s";
+        //$ul.css("transform","translateX(" + index * width * (-1) + "px)");
+        //$ul.css("webkitTransform","translateX(" + index * width * (-1) + "px)");
+    }
+//    加过渡
+    function addTransition() {
+        imgBox.style.transition = "all .3s ease 0s";
+        imgBox.style.webkitTransition = "all .3s ease 0s";
         //$ul.css('transition',"all .3s ease 0s");
+        // $ul.css('webkitTransition',"all .3s ease 0s");
     }
 
 //    除去过渡
     function removeTransition() {
         imgBox.style.transition = "none";
         imgBox.style.webkitTransition = "none";
+
         //$ul.css('transition',"none");
+        //$ul.css('webkitTransition',"none");
     }
 
     //图片移动
     function setTransform(t) {
+
         imgBox.style.transform = "translateX(" + t + "px)";
         imgBox.style.webkitTransform = "translateX(" + t + "px)";
-        //$ul.css('transform',"translateX(" + t + "px)");
+       // $ul.css('transform',"translateX(" + t + "px)");
+        //$ul.css('webkitTransform',"translateX(" + t + "px)");
+
     }
 
     function yuanPlay(index) {
@@ -148,5 +161,5 @@ $(function () {
     createYuan();
     //轮播图
     scrollPic();
-});
+})
 
