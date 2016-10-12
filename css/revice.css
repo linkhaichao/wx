@@ -4,15 +4,23 @@
 /*轮播图*/
 #slider {
     width: 100%;
+    height: 260px;
     overflow: hidden;
     position: relative;
+    background: url("../img/1.png") no-repeat center center;
+    background-size: 97% 99%;
 }
 
 #slider ul {
     width: 500%;
     height: 100%;
 }
-
+#slider p{
+    position: absolute;
+    z-index: 999;
+    top: 44%;
+    left: 38%;
+}
 #slider ul li {
     float: left;
     width: 20%;
@@ -23,8 +31,16 @@
     width: 100%;
     height: 100%;
     display: block;
+    position: relative;
 }
-
+#slider ul li a span{
+    position: absolute;
+    z-index: 998;
+    bottom: 13%;
+    left: 42%;
+    color: #fff;
+    font-family: "微软雅黑";
+}
 #slider ul li a img {
     width: 100%;
     height: 100%;

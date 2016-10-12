@@ -7,6 +7,15 @@
     <title>牛人帮-接发单</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/revice.css">
+   <!-- <script type="text/javascript">
+    /*检查是否是微信*/
+    var ua = navigator.userAgent.toLowerCase();
+    var isWeixin = ua.indexOf('micromessenger') != -1;
+    if (!isWeixin) {
+        document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/connect/zh_CN/htmledition/style/wap_err1a9853.css">';
+        document.body.innerHTML = '<div class="page_msg"><div class="inner"><span class="msg_icon_wrp"><i class="icon80_smile"></i></span><div class="msg_content">请在微信客户端打开链接</div></div></div>';
+    }
+    </script>-->
 </head>
 <body>
 <!--头部区域-->
@@ -16,16 +25,90 @@
 <!-- 轮播图-->
 <section id="slider">
     <ul>
-        <li><a href="#"><img src="img/6.png" alt=""/></a></li>
+        <!--<li><a href="#"><img src="img/6.png" alt=""/></a></li>
         <li><a href="#"><img src="img/1.png" alt=""/></a></li>
         <li><a href="#"><img src="img/2.png" alt=""/></a></li>
         <li><a href="#"><img src="img/6.png" alt=""/></a></li>
-        <li><a href="#"><img src="img/1.png" alt=""/></a></li>
+        <li><a href="#"><img src="img/1.png" alt=""/></a></li>-->
+
     </ul>
     <!-- 小圆点在js中生成-->
+    <p>正在加载中......</p>
 </section>
 <!-- /轮播图-->
+<!--接单和发单-->
+<section id="niu-revice">
+    <section class="fl">
+        <div>
+            <a href="./faDan/faDan.html">
+                <div>
+                    <p>发单</p>
+                    <p>快速发单轻松解决</p>
+                </div>
+                 <img src="img/fadan.png" alt="">
+            </a>
+        </div>
+        <div class="clearfix">
+            <div >
+                <a href="login.html"><img src="img/fajian.png" alt="">
+                <p>审核中</p></a>
+            </div>
+            <div class="">
+                <a href="#"><img src="img/jinfa.png" alt="">
+                <p>进行中</p></a>
+            </div>
+        </div>
+    </section>
+    <section class="fl new-fl">
+        <div>
+            <a href="#">
+            <div>
+                <p>接单</p>
+                <p>快速发单轻松解决</p>
+            </div>
+            <img src="img/jiedan.png" alt="">
+            </a>
+        </div>
+        <div class="clearfix">
+            <div >
+                <a href="#"><img src="img/jiejian.png" alt="">
+                <p>审核中</p></a>
+            </div>
+            <div class="">
+                <a href="#"><img src="img/jinjie.png" alt="">
+                <p>进行中</p></a>
+            </div>
+        </div>
+    </section>
+</section>
+<!--审核中-->
+<section id="niu-shenhe">
+    <p>
+        <span></span>
+        审核中
+    </p>
+    <p>没有操作订单</p>
+</section>
+<!--脚注区域-->
+<footer>
+    <div>
+        <a href="./index.html"><img src="img/jielan.png" alt="">
+        <p>接发单</p></a>
+    </div>
+    <div>
+        <a href="niuRen/diannao.html"><img src="img/dianhui.png" alt="">
+        <p>电脑帮</p></a>
+    </div>
+    <div>
+       <a href="woDe/mine.html"> <img src="img/wohui.png" alt="">
+        <p>我的</p></a>
+    </div>
+</footer>
 <script src="js/zepto.min.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/fx_methods.js"></script>
+<script src="js/ajax.js"></script>
+<!--<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>-->
 <script src="js/index.js"></script>
 </body>
 </html>

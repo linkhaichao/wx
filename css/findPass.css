@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body, html {
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 100%;
+}
+#findPass > div {
+    position: relative;
+}
+#findPass > div p a {
+
+    width: 84px;
+
+    height: 30px;
+
+    border-radius: 8px;
+
+    display: inline-block;
+
+    position: absolute;
+
+    background: rgba(255, 150, 0, 1);
+
+    color: #fff;
+
+    font-size: 10px;
+
+    line-height: 30px;
+
+    text-align: center;
+
+    right: 14px;
+
+    top: 14px;
+}

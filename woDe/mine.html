@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>牛人帮-我的</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/wode.css">
+
+
+    <!-- <script type="text/javascript">
+     /*检查是否是微信*/
+     var ua = navigator.userAgent.toLowerCase();
+     var isWeixin = ua.indexOf('micromessenger') != -1;
+     if (!isWeixin) {
+         document.head.innerHTML = '<title>抱歉，出错了</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/connect/zh_CN/htmledition/style/wap_err1a9853.css">';
+         document.body.innerHTML = '<div class="page_msg"><div class="inner"><span class="msg_icon_wrp"><i class="icon80_smile"></i></span><div class="msg_content">请在微信客户端打开链接</div></div></div>';
+     }
+     </script>-->
+</head>
+<body>
+<!--头部区域-->
+<header id="niu-jiefa">
+    <p>我的</p>
+</header>
+<!--联系方式-->
+<section id="niu-lianxi">
+    <div>
+        <div>
+            <img src="../img/0.jpg" alt="" class="imgSrc">
+        </div>
+        <div>
+            <p class="usernameLogin">未登陆</p>
+            <p class="mobileLogin">(点击登陆)</p>
+        </div>
+        <div>
+            <a href="#"><img src="../img/jiantou.png" alt=""></a>
+        </div>
+    </div>
+    <div>
+        <a href="#" id="shezhi" onclick="showSheZhi();return false;">
+            <img src="../img/shezhi.png" alt="">
+            <span>个人设置</span>
+        </a>
+        <a href="personZhangHu.html" class="shezhi" onclick="showZhangHu();return false">
+            <img src="../img/zhanghu.png" alt="">
+            <span>个人账户</span>
+        </a>
+        <a href="shenFenYanZheng.html" onclick="showShiMing();return false">
+            <img src="../img/renzheng.png" alt="">
+            <span>实名认证</span>
+        </a>
+        <script>
+            /*点击个人设置，个人账户，实名认证事件*/
+            function showSheZhi(){
+                console.log(this);
+                var loginStatus=localStorage.getItem("loginStatus");
+                if(loginStatus=="登录成功"){
+                    window.location.href="settings.html";
+                }else {
+                    window.location.href="../login.html";
+                }
+            }
+            function showZhangHu(){
+                var loginStatus=localStorage.getItem("loginStatus");
+                if(loginStatus=="登录成功"){
+                    window.location.href="personZhangHu.html";
+                }else {
+                    window.location.href="../login.html";
+                }
+            }
+            function showShiMing(){
+                var loginStatus=localStorage.getItem("loginStatus");
+                if(loginStatus=="登录成功"){
+                    window.location.href="shenFenYanZheng.html";
+                }else {
+                    window.location.href="../login.html";
+                }
+            }
+        </script>
+    </div>
+</section>
+<!--发布的订单-->
+<section class="dingdan">
+    <div>
+        <span></span>
+        <h2>发布的订单</h2>
+    </div>
+    <div>
+        <a>
+            <img src="../img/shenhezhong.png" alt="">
+            <p>审核中</p>
+        </a>
+        <a>
+            <img src="../img/jinxingzhong.png" alt="">
+            <p>进行中</p>
+        </a>
+        <a>
+            <img src="../img/yiwancheng.png" alt="">
+            <p>已完成</p>
+        </a>
+    </div>
+</section>
+<!--接收的订单-->
+<section class="dingdan">
+    <div>
+        <span></span>
+        <h2>接收的订单</h2>
+    </div>
+    <div>
+        <a>
+            <img src="../img/shenhezhong.png" alt="">
+            <p>审核中</p>
+        </a>
+        <a>
+            <img src="../img/jinxingzhong.png" alt="">
+            <p>进行中</p>
+        </a>
+        <a>
+            <img src="../img/yiwancheng.png" alt="">
+            <p>已完成</p>
+        </a>
+    </div>
+</section>
+<section id="tuichu-btn" class="btn-all">
+    <a href="../login.html">退出登录</a>
+</section>
+<!--脚注区域-->
+<footer>
+    <div>
+        <a href="../index.html"><img src="../img/jiehui.png" alt="">
+            <p>接发单</p></a>
+    </div>
+    <div>
+        <a href="../niuRen/diannao.html"><img src="../img/dianhui.png" alt="">
+            <p>电脑帮</p></a>
+    </div>
+    <div>
+        <a href="./mine.html"> <img src="../img/wolan.png" alt="">
+            <p>我的</p></a>
+    </div>
+</footer>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/mine.js"></script>
+</body>
+</html>

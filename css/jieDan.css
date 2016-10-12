@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F4;
+    position: relative;
+}
+#jieDanSel{
+    width:100%;
+    height:39px;
+    overflow: hidden;
+}
+#jieDanSel >div{
+    width: 33.3%;
+    float: left;
+    height: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    /* border-radius: 6px; */
+    background: #fff;
+    line-height: 39px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.selectJie{
+    background: rgba(0,0,0,.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 84px; */
+    left: 0;
+    padding-top: 0;
+    /*transform: translateY(-115%);*/
+    transition: all .3s;
+    display: none;
+    overflow: hidden;
+}
+.selectJie>div{
+    /*transform: translateY();*/transform: translateY(-100%);
+    transition: all .3s;
+}
+.selectJie p{
+    /* height:52px; */
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px 35px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

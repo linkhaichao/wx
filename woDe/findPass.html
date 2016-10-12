@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>牛人帮-找回密码</title>
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/findPass.css">
+</head>
+<body>
+<!--登录头-->
+<section id="niu-zhuce" class="head-nav">
+    <div>
+        <a href="javascript:history.go(-1);"><img src="../img/zuojiantou.png" alt=""></a>
+    </div>
+    <div>
+        <p>找回密码</p>
+    </div>
+</section>
+<!--注册体-->
+<section id="findPass" class="setAll">
+    <span></span>
+    <div>
+        <p>找回密码</p>
+    </div>
+    <div>
+        <p>
+            <label for="haoma">手机号:</label>
+            <input type="number" id="haoma" placeholder="请输入手机号" >
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="verify">验证码:</label>
+            <input type="text" id="verify" placeholder="请输入验证码">
+            <a href="#" id="getCode">获取验证码</a>
+        </p>
+    </div>
+</section>
+<!--注册按钮-->
+<section id="findPass-btn" class="btn-all">
+    <a href="#">找回密码</a>
+</section>
+<!--注册用户-->
+<section id="findPass-bottom" class="btn-bottom">
+    <a href="zhuce.html">用户注册</a>
+    <a href="../login.html">我有账号</a>
+</section>
+<section id="toast">
+    <!--手机格式不对-->
+</section>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/fx.js"></script>
+<script src="../js/fx_methods.js"></script>
+<script src="../js/findPass.js"></script>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

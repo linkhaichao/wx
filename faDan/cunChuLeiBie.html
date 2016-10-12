@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>牛人帮-存储设备类别</title>
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/cunChuLeiBie.css">
+</head>
+<body>
+<!--个人设置-->
+<section id="niu-fadan" class="head-nav">
+    <div>
+        <a href="javascript:history.go(-1);"><img src="../img/zuojiantou.png" alt=""></a>
+    </div>
+    <div>
+        <p>类别</p>
+    </div>
+</section>
+
+<section id="cunChuSheBei" class="setAll">
+    <span></span>
+    <div>
+        <p>存储设备</p>
+    </div>
+    <div>
+        <p>
+            <label for="cunPro">产品:</label>
+            <input type="text" id="cunPro"  placeholder="请选择">
+        </p>
+    </div>
+</section>
+<section id="cunNum" class="setAll newChild">
+    <div>
+        <p>
+            <span>数量</span>
+            <span class="mui-numbox"  data-numbox-min='0'>
+                <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+                <input class="mui-numbox-input" type="number" />
+                <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+            </span>
+        </p>
+    </div>
+</section>
+
+<section id="cunChuService" class="setAll">
+    <span></span>
+    <div>
+        <p>服务内容</p>
+    </div>
+    <div class="mui-input-row mui-checkbox mui-left">
+        <label>设备上架</label>
+        <input name="checkbox1" value="Item 1" type="checkbox" checked>
+    </div>
+    <div class="mui-input-row mui-checkbox mui-left">
+        <label>加电自检</label>
+        <input name="checkbox1" value="Item 2" type="checkbox" checked>
+    </div>
+</section>
+<section id="toast">
+    <!--手机格式不对-->
+</section>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/fx.js"></script>
+<script src="../js/fx_methods.js"></script>
+<script src="../js/faDanLeiBie.js"></script>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function () {
+        $("#cunPro").on('click', function () {
+            /*
+             * 下拉城市列表
+             */
+            var province = 0, city = 0, num = 0;
+            var cityPicker = new mui.PopPicker({
+                layer: 2
+            });
+            cityPicker.setData(cityData);
+            $('#areaFaDan').on('click', function (event) {
+                cityPicker.show(function (items) {
+                    $('#areaFaDan').val(items[0].text + " - " + items[1].text);
+                    province = items[0]['value'];
+                    city = items[1]['value'];
+                });
+            });
+        })
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

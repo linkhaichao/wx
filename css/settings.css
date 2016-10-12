@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body, html {
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 100%;
+}
+
+#touxiang img{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 8px;
+    float: right;
+    margin-right: 8px;
+    margin-top: 6px;
+}
+#touxiang>div{
+    border-radius: 6px;
+}
+#gerenPro >div:nth-of-type(2),
+#workExper >div:nth-of-type(2),
+#gerenSpec >div:nth-of-type(2)
+{
+    padding: 0 20px;
+    padding-top:26px;
+    padding-bottom: 30px;
+}
+
+
+
+#xiugai-btn{
+    margin-bottom: 24px;
+}
+
+
+
+#gerenSpec #specialty{
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

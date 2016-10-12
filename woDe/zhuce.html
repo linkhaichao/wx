@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>牛人帮-注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/zhuCe.css">
+</head>
+<body>
+<!--登录头-->
+<section id="niu-zhuce" class="head-nav">
+    <div>
+        <a href="javascript:history.go(-1);"><img src="../img/zuojiantou.png" alt=""></a>
+    </div>
+    <div>
+        <p>注册</p>
+    </div>
+</section>
+<!--注册体-->
+<section id="zhuce" class="setAll">
+    <span></span>
+    <div>
+        <p>用户注册</p>
+    </div>
+    <div>
+        <p>
+            <label for="haoma">手机号:</label>
+            <input type="number" id="haoma" placeholder="请输入手机号" >
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="verify">验证码:</label>
+            <input type="text" id="verify" placeholder="请输入验证码">
+            <a href="#" id="getCode">获取验证码</a>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="nichen">昵称:</label>
+            <input type="text" id="nichen" placeholder="请输入昵称">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="leixing">类型:</label>
+            <span id="leixing">请输入类型</span>
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="password">密码:</label>
+            <input type="password" id="password" placeholder="请输入密码">
+        </p>
+    </div>
+</section>
+<!--注册按钮-->
+<section id="zhuce-btn">
+    <a href="#">立即加入</a>
+</section>
+<!--注册用户-->
+<section id="register">
+    <a href="./findPass.html">忘记密码</a>
+    <a href="../login.html">我有账号</a>
+</section>
+<section id="toast">
+    <!--手机格式不对-->
+</section>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/fx.js"></script>
+<script src="../js/fx_methods.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/zhuCe.js"></script>
+</body>
+</html>

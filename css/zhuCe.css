@@ -1,0 +1,89 @@
+@charset "UTF-8";
+body, html {
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 100%;
+}
+
+#zhuce > div {
+    position: relative;
+}
+
+#zhuce > div p a {
+
+    width: 84px;
+
+    height: 30px;
+
+    border-radius: 8px;
+
+    display: inline-block;
+
+    position: absolute;
+
+    background: rgba(255, 150, 0, 1);
+
+    color: #fff;
+
+    font-size: 10px;
+
+    line-height: 30px;
+
+    text-align: center;
+
+    right: 14px;
+
+    top: 14px;
+}
+#leixing{
+    margin-left: 24px;
+    font-size: 14px;
+    color: #ABABA9;
+}
+/*按钮*/
+#zhuce-btn {
+    margin: auto;
+    margin-top: 19px;
+    padding: 0 10px;
+    height: 50px;
+}
+
+#zhuce-btn a {
+    display: block;
+    background-color: rgba(0, 118, 255, 1);
+    width: 84%;
+    height: 100%;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    margin: auto;
+}
+
+/*注册用户*/
+#register {
+    margin-top: 10px;
+}
+
+#register a:nth-of-type(1) {
+
+    font-size: 14px;
+
+    color: rgba(0, 118, 255, 1);
+
+    margin-left: 10%;
+
+    float: left;
+}
+
+#register a:nth-of-type(2) {
+
+    font-size: 14px;
+
+    color: rgba(0, 118, 255, 1);
+
+    float: right;
+
+    margin-right: 10%;
+}

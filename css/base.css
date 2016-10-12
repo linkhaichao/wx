@@ -12,10 +12,11 @@ html{
 body{
     font-size: 14px;
     font-family: "Mirosoft YaHei",sans-serif;
-    /* position: absolute; */
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: #fff;
+    padding-bottom: 49px;
 }
 a{
     text-decoration: none;
@@ -101,19 +102,292 @@ footer>div img{
 }
 
 
+/*登录点击提示*/
+#toast{
+    clear: both;
+    padding: 10px;
+    border-radius: 6px;
+    background-color:rgba(0, 118, 255, 0.7);
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    opacity: 0;
+    display: block;
+}
+/*提现头*/
+.head-nav {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #b2b2b2;
+    line-height: 44px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.head-nav > div {
+    float: left;
+}
+.head-nav > div:nth-of-type(1) {
+    height: 100%;
+    width: 5%;
+    padding-left: 1%;
+}
+.head-nav > div:nth-of-type(1) a {
+    display: block;
+    width: 100%;
+    padding-top: 11px;
+    height: 100%;
+}
+.head-nav > div:nth-of-type(2) {
+    width: 90%;
+}
+.head-nav > div:nth-of-type(2) p {
+    padding: 0;
+    font-size: 17px;
+    color: #030303;
+}
+/*提现体模板*/
+#niu-tixian {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #b2b2b2;
+    line-height: 44px;
+    background-color: #fff;
+}
+#niu-tixian > div {
+    float: left;
+}
+#niu-tixian > div:nth-of-type(1) {
+    height: 100%;
+    width: 5%;
+    padding-left: 1%;
+}
+#niu-tixian > div:nth-of-type(1) a {
+    display: block;
+    width: 100%;
+    padding-top: 11px;
+    height: 100%;
+}
+#niu-tixian > div:nth-of-type(2) {
+    width: 90%;
+}
+#niu-tixian > div:nth-of-type(2) p {
+    padding: 0;
+    font-size: 17px;
+    color: #030303;
+}
+/*提现金额*/
+.personAll {
+    /* background-color: #fff; */
+    border-radius: 6px;
+    margin: 6px;
+    position: relative;
+}
+.personAll span {
+    width: 4px;
+    height: 17px;
+    background-color: #0076ff;
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 15px;
+}
+.personAll div {
+    background-color: #fff;
+}
+.personAll > div > p {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #000;
+    padding: 15px 0;
+}
+.personAll> div > p > span {
+    color: #d0021b;
+    font-size: 14px;
+    margin-left: 25px;
+}
+.personAll > div:nth-of-type(1) {
+    border-radius: 6px 6px 0 0;
+}
+.personAll> div:nth-of-type(2) {
+    margin-top: 2px;
+    border-radius: 0 0 6px 6px;
+}
+.personAll > div:nth-of-type(2) p {
+    padding: 21px 0;
+}
+.moneyAll > div:nth-of-type(2) p input {
+    padding-left: 45px;
+    color: #7f7f7f;
+}
+.methodAll > div:nth-of-type(2) p input {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    /*border: 1px solid #B3B3B3;*/
+    text-align: center;
+    vertical-align: bottom;
+    margin-right: 16px;
+    box-sizing: border-box;
+    background-image: url(../img/checked.png);
+    -webkit-background-size:18px 18px;
+    background-size:18px 18px;
+}
+
+/*提现按钮*/
+.btn-all{
+    width: 80%;
+    height: 50px;
+    background-color: rgba(0, 118, 255, 1);
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 23px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.btn-all a{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*登录和注册模板*/
+.setAll{
+    border-radius: 6px;
+    margin: 6px;
+    position: relative;
+}
+
+.setAll > span {
+    width: 4px;
+    height: 17px;
+    background-color: #0076ff;
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 15px;
+}
+
+.setAll > div {
+    background-color: #fff;
+    margin-top: 2px;
+}
+
+.setAll> div > p {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #000;
+    padding: 21px 0;
+}
+
+.setAll > div > p > span {
+    color: #d0021b;
+    font-size: 14px;
+}
+
+.setAll > div:nth-of-type(1) {
+    border-radius: 6px 6px 0 0;
+}
 
 
+.setAll> div:nth-of-type(1) {
+    margin-top: 0px;
 
+}
 
+.setAll > div:nth-of-type(1) p{
+    padding: 15px 0;
+}
+.setAll > div p> label:nth-of-type(1){
+    display: inline-block;
+    width: 58px;
+    height: 17px;
+    text-align: left;
+}
+.setAll > div p >input:nth-of-type(1){
+    display: inline-block;
+    color: #7f7f7f;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+    padding-left: 24px;
+    font-size: 14px;
+}
+.setAll> div:last-of-type{
+    margin-top: 2px;
+    border-radius: 0 0 6px 6px;
+}
+.setAll > div:nth-last-of-type p input{
+    padding-left: 44px;
+}
 
+.btn-bottom {
+    margin-top: 10px;
+}
 
+.btn-bottom a:nth-of-type(1) {
 
+    font-size: 14px;
 
+    color: rgba(0, 118, 255, 1);
 
+    margin-left: 10%;
 
+    float: left;
+}
 
+.btn-bottom a:nth-of-type(2) {
 
+    font-size: 14px;
 
+    color: rgba(0, 118, 255, 1);
+
+    float: right;
+
+    margin-right: 10%;
+}
+
+.textareaAll{
+    display: block;
+    /*width:318px;*/
+    height: 120px;
+    padding: 5px 20px;
+    background: rgba(216, 216, 216, 1);
+    margin: auto;
+    border-radius: 8px;
+}
+
+.newChild >div:nth-of-type(1){
+    border-radius: 6px;
+    height: 51px;
+}
+.newChild >div:nth-of-type(1) p{
+    display: block;
+    text-align: left;
+    padding-right: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+
+}
+
+.newChild p>span:first-of-type{
+    color: #000;
+}
+.newChild p>span:nth-of-type(2){
+    float: right;
+    color: #000;
+    margin-top: -6px;
+    font-size:14px;
+}
 
 
 

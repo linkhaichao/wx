@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body,html{
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*用户名和密码*/
+#user-pass{
+    /* background-color: #fff; */
+    border-radius: 6px;
+    margin: 6px;
+    position: relative;
+}
+
+#user-pass > span {
+    width: 4px;
+    height: 17px;
+    background-color: #0076ff;
+    display: inline-block;
+    position: absolute;
+    left: -2px;
+    top: 15px;
+}
+
+#user-pass > div {
+    background-color: #fff;
+}
+
+#user-pass> div > p {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #000;
+    padding: 15px 0;
+}
+
+#user-pass > div > p > span {
+    color: #d0021b;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+#user-pass > div:nth-of-type(1) {
+    border-radius: 6px 6px 0 0;
+}
+#user-pass> div:nth-of-type(4){
+    margin-top: 2px;
+    border-radius: 0 0 6px 6px;
+}
+
+#user-pass> div:nth-of-type(2),
+#user-pass> div:nth-of-type(3){
+    margin-top: 2px;
+
+}
+
+#user-pass > div:nth-of-type(2) p,
+#user-pass > div:nth-of-type(3) p,
+#user-pass > div:nth-of-type(4) p{
+    padding: 21px 0;
+}
+#user-pass > div:nth-of-type(2) p input {
+    color: #7f7f7f;
+}
+#user-pass > div:nth-of-type(2) p input,
+#user-pass > div:nth-of-type(3) p input{
+    display: inline-block;
+    padding-left: 25px;
+}
+#user-pass > div:nth-of-type(4) p input{
+    padding-left: 11px;
+}
+/*按钮*/
+#pass-btn{
+    margin: auto;
+    margin-top: 19px;
+    padding: 0 10px;
+    height: 50px;
+}
+#pass-btn a{
+    display: block;
+    background-color: rgba(0, 118, 255, 1);
+    width: 84%;
+    height:100%;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
